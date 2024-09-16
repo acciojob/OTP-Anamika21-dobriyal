@@ -8,12 +8,12 @@ inputs.forEach((input, index) => {
                 if (index < inputs.length - 1) {
                     inputs[index + 1].focus(); // Focus next input
                 }
-            }, 10);
+            }, 100);
         } else if (e.key === 'Backspace') {
             if (index > 0) {
                 setTimeout(() => {
                     inputs[index - 1].focus(); // Focus previous input
-                }, 10);
+                }, 100);
             }
         }
     });
